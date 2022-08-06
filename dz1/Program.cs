@@ -10,9 +10,9 @@
 
 Console.WriteLine("Введите на проверку 2 числа:");
 Console.WriteLine("1 число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+int a = int.Parse(Console.ReadLine()!);
 Console.WriteLine("2 число: ");
-int b = Convert.ToInt32(Console.ReadLine());
+int b = int.Parse(Console.ReadLine()!);
 if (a == b*b) {
 Console.WriteLine("Да! "); //, pervoe chislo -" + a + "yavlyaetsya kvadratom vtorogo chisla -  + b
 }

@@ -7,15 +7,15 @@
 //3. Напишите программу, которая будет выдавать название дня недели по заданному номеру.
 //	3 -> Среда 
 //5 -> Пятница
-double a,b;
-Console.WriteLine("Vvedite na proverku 2 chisla:");
-Console.WriteLine("1 chislo: ");
-Console.Readline(a);
-Console.WriteLine("2 chislo: ");
-Console.Readline(b);
-if (a==b*b) {
-Console.WriteLine("da"); //, pervoe chislo -" + a + "yavlyaetsya kvadratom vtorogo chisla -  + b
+
+Console.WriteLine("Введите на проверку 2 числа:");
+Console.WriteLine("1 число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("2 число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+if (a == b*b) {
+Console.WriteLine("Да! "); //, pervoe chislo -" + a + "yavlyaetsya kvadratom vtorogo chisla -  + b
 }
 else {
-Console.WriteLine("net"); //, pervoe chislo -" + a + "yavlyaetsya kvadratom vtorogo chisla - " + b  
+Console.WriteLine("Нет! "); //, pervoe chislo -" + a + "yavlyaetsya kvadratom vtorogo chisla - " + b  
 }

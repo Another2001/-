@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+//4 -> да
+//-3 -> нет
+Random rnd = new Random();
+int a = rnd.Next(1, 100);
+Console.WriteLine("Вводимое число : " + a);
+if (a % 2 == 0){
+  Console.WriteLine("число четное");  
+}else{
+  Console.WriteLine("число нечетное");  
+}
+

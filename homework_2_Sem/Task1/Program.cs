@@ -2,16 +2,16 @@
 //456 -> 5
 //782 -> 8
 //918 -> 1
-int random(){
-Random rnd = new Random();
-int a = rnd.Next(100, 999);  
-return a;  
+int Random(){
+   Random rnd = new Random();
+   int a = rnd.Next(100, 999);  
+   return a;  
 }
-int a = random();
+int a = Random();
 Console.WriteLine("Наше число : " + a );
-int secoNum(){
+int SecoNum(){
    int x = a / 10;
    x = x % 10;
-return x;
+   return x;
 }
-Console.WriteLine("Вторая цифра 3-х значного числа : " +secoNum());
+Console.WriteLine("Вторая цифра 3-х значного числа : " +SecoNum());

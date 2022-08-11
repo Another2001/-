@@ -6,20 +6,20 @@ int RandomInt(int min, int max)
 {
   return new Random().Next(min, max);
 }
-string len(){
+string Len(){
     string result = Convert.ToString(RandomInt(5,2500));
     return result;
 }
-Boolean check(int str1){
+Boolean Сheck(int str1){
     Boolean p = false;
     if ((str1) < 100 ){
         p = true;
     } 
     return p;
 }
-int str1 = Convert.ToInt32(len());
+int str1 = Convert.ToInt32(Len());
 Console.WriteLine("Заданное число: " + str1);
-if (check(str1) == true ){
+if (Сheck(str1) == true ){
     Console.WriteLine("Третьей цифры нет! ");
 } else {
     Console.WriteLine("Третья цифра числа это : " + Convert.ToString(str1)[2]);

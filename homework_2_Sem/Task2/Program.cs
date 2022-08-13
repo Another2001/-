@@ -2,6 +2,8 @@
 //645 -> 5
 //78 -> третьей цифры нет
 //32679 -> 6
+
+// без понятия)
 int RandomInt(int min, int max)
 {
   return new Random().Next(min, max);

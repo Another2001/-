@@ -19,12 +19,12 @@ return p;
 var cortezh = (n = vvod(), n1 = vvod() );
 var cortezh1 = ( m = vvod(),m1 = vvod() );
 var dlina = Math.Sqrt((cortezh.Item2 - cortezh.Item1)+(cortezh1.Item2 - cortezh1.Item1));
-Console.Write("расстояние между 2 точек = " + dlina);
+Console.WriteLine("расстояние между 2 точек = " + dlina);
 
 //следующая
 int l = 6;
 int d = 1;
 for (int i = 1; i<=l; i++){
-    m = i*i;
-    Console.Write(" - " + d);
+    d = i*i;
+    Console.Write( d + " ; ");
 }

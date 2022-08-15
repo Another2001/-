@@ -54,12 +54,6 @@ string NewPrint(int[] arr)
   return s;
 }
 
-// // Клиентский код
-// int[] res = GetBinaryArray(10);
-// //Print(res);
-
-// string s = NewPrint(res);
-// Console.WriteLine($"s: {s}");
 
 // 2.написать метод, который принимает на вход
 // двоичное представление числа в виде массива ARR и выдаёт
@@ -83,14 +77,14 @@ double BinToDec(int[] arr)
 }
 
 // // Клиентский код
-// int[] res = GetBinaryArray(4);
-// //Print(res);
+int[] res = GetBinaryArray(4);
+Print(res);
 
-// string s = NewPrint(res);
-// Console.WriteLine($"s: {s}");
-// Console.ReadLine();
-// double dec = BinToDec(res);
-// Console.WriteLine($"dec: {dec}");
+string s = NewPrint(res);
+Console.WriteLine($"s: {s}");
+Console.ReadLine();
+double dec = BinToDec(res);
+Console.WriteLine($"dec: {dec}");
 
 // 3.написать метод, который принимает на вход
 // десятичное представление числа N и показатель основания СС P, в которую

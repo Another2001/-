@@ -13,7 +13,7 @@ int[,] Fill(int m, int n)
     return arr;
 }
 System.Console.Write("Введите число для проверки : ");
-int Chi = Convert.ToInt32(Console.Readline());
+int Chi = Convert.ToInt32(Console.ReadLine());
 int[,] Print(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
@@ -26,10 +26,8 @@ int[,] Print(int[,] arr)
     }
     return arr;
 }
-int Check(){
+void Check(){
 
 }
-
-Fill(5,4);
 Print(Fill(5,4));
 Check();

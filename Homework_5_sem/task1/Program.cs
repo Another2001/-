@@ -25,4 +25,4 @@ string CheckEvenNumb(int N) // Можно было разделить на 3 ф�
 
 Console.Write("Input size of the Array: ");
 int N = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(GetNumber(N));
+Console.WriteLine(CheckEvenNumb(N));

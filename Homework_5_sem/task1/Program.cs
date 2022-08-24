@@ -2,9 +2,13 @@
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-string CheckEvenNumb(int N) // Можно было разделить на 3 функции, но кому оно надо?)) 
-
+void Log(object o)
 {
+  File.AppendAllText("log.csv", $"{DateTime.Now};{o}\n");
+}
+string CheckEvenNumb(int N) // Можно было разделить на 3 функции, но кому оно надо?))
+{
+    Log("вызван метод CheckEvenNumb");
     int[] array = new int[N];
     for (int i = 0; i < array.Length; i++)
     {

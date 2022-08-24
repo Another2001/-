@@ -7,18 +7,19 @@ int a = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[a];
 void GetMass(int a)
 {
-    for (int i = 0; i < array.Length; i++)         
+    for (int i = 0; i < array.Length; i++)
     {
         if (i % 2 == 1)
         {
             array[i] = new Random().Next(-25, 75);
             Console.Write(" (" + array[i] + ") ");  // выделим нечетные элементы
-        } else
+        }
+        else
         {
             array[i] = new Random().Next(-25, 75);
             Console.Write(" " + array[i] + " ");
         }
-        
+
     }
 }
 int Sum()

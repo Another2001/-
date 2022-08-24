@@ -11,17 +11,17 @@ string CheckEvenNumb(int N) // Можно было разделить на 3 ф�
         array[i] = new Random().Next(1, 500);
         Console.Write(" " + array[i] + " ");
     }
-    int Quantity = 0;
+    int quantity = 0;
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] % 2 == 0)
 
         {
-            Quantity++;
+            quantity++;
         }
     }
-    if (Quantity == 0) return "Четных чисел нет";
-    else return ($"кол-во четных чисел : {Quantity}");
+    if (quantity == 0) return "Четных чисел нет";
+    else return ($"кол-во четных чисел : {quantity}");
 }
 
 Console.Write("Введите размер массива: ");

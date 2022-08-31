@@ -49,8 +49,8 @@ int Input(string text)
     return number;
 }
 
-int m = Input("rows:");
-int n = Input("columns:");
+int m = Input("кол-во строк :");
+int n = Input("кол-во столбцов :");
 if (m >= 0 && n >= 0)
 {
     double[,] matrix = CreateArray(m, n);

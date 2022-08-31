@@ -10,6 +10,7 @@ int[,] CreateArray(int rows, int columns)
 {
     return new int[rows, columns];
 }
+
 void Fill(int[,] array)
 {
     int rows = array.GetLength(0);
@@ -24,6 +25,7 @@ void Fill(int[,] array)
         }
     }
 }
+
 void Print(int[,] array)
 {
     int rows = array.GetLength(0);
@@ -38,6 +40,7 @@ void Print(int[,] array)
         Console.WriteLine();
     }
 }
+
 int Input(string text)
 {
     bool f = false;
@@ -50,6 +53,7 @@ int Input(string text)
     }
     return number;
 }
+
 void FindForIndex(int[,] array, int row, int column)
 {
     int r = array.GetLength(0);
@@ -64,6 +68,7 @@ void FindForIndex(int[,] array, int row, int column)
         Console.WriteLine(array[row - 1, column - 1]);
     }
 }
+
 Console.WriteLine("размеры матрицы: ");
 int m = Input("кол-во строк: ");
 int n = Input("кол-во столбцов: ");

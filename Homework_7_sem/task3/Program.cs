@@ -9,6 +9,7 @@ int[,] CreateArray(int rows, int columns)
 {
     return new int[rows, columns];
 }
+
 void Fill(int[,] array, int minValue, int maxValue)
 {
     int rows = array.GetLength(0);
@@ -22,6 +23,7 @@ void Fill(int[,] array, int minValue, int maxValue)
         }
     }
 }
+
 void Print(int[,] array)
 {
     int rows = array.GetLength(0);
@@ -36,6 +38,7 @@ void Print(int[,] array)
         Console.WriteLine();
     }
 }
+
 int Input(string text)
 {
     bool f = false;
@@ -48,6 +51,7 @@ int Input(string text)
     }
     return number;
 }
+
 string ColumnsSum(int[,] array)
 {
     string summa = string.Empty;

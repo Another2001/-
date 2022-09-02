@@ -53,20 +53,17 @@ int Input(string text)
 }
 int[,] Sorting(int[,] array)
 {
-    int min = 0;
     for (int row = 0; row < array.GetLength(0); row++)
     {
-        min = array[row,0];
-        for (int col = 0; col <= array.GetLength(1) - 1; col++)
+        for (int col = 0; col < array.GetLength(1) - 1; col++)
         {
-            if (array[row, col] > min)
+            int count = 0;
+            if (array[row, col] > array[row, 0])
             {
-                min = array[row, col];
-                (array[row, col ], array[row, col + 1]) = (array[row, col + 1], array[row, col]);   
+                count++;  
+                (array[row, col + 1], array[row, col]) = (array[row, col], array[row, col + 1]);
             }
-            Console.Write($"{array[row, col],5} ");
         }
-        Console.WriteLine();
     }
     return array;
 }
@@ -82,4 +79,5 @@ if (m >= 0 && n >= 0)
     Print(matrix);
     Console.WriteLine();
     Sorting(matrix);
+    Print(matrix);
 }

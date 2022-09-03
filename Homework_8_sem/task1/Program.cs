@@ -57,21 +57,20 @@ int[,] Sorting(int[,] array)
     {
         for (int col = 0; col < array.GetLength(1) - 1; col++)
         {
-            int count = 0;
-            if (array[row, col] > array[row, 0])
+            for (int k = 0; k < array.GetLength(1) - 1; k++)
             {
-                count++;  
-                (array[row, col + 1], array[row, col]) = (array[row, col], array[row, col + 1]);
+                if (array[row, k] < array[row, k + 1])
+                {
+                    (array[row, k], array[row, k + 1]) = (array[row, k + 1], array[row, k]);
+                }
             }
         }
     }
-    return array;
+     return array;
 }
-
 
 int m = Input("rows:");
 int n = Input("columns:");
-
 if (m >= 0 && n >= 0)
 {
     int[,] matrix = CreateArray(m, n);

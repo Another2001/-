@@ -16,24 +16,25 @@ void Fill(int[,,] array)
     int rows = array.GetLength(0);
     int columns = array.GetLength(1);
     int volume = array.GetLength(2);
+    string s = string.Empty;
     for (int row = 0; row < rows; row++)
     {
         for (int column = 0; column < columns; column++)
         {
             for (int volum = 0; volum < volume; volum++)
             {
-                int a = new Random().Next(1, 10);
-                // метод "Contains" имеет логический тип данных , принимает на вход массив(строку) и значение 
-                // для проверки, возвращая истину при нахождении в строке данного символа
-                if (!(array.Contains(a)))
+                int a = new Random().Next(10, 100);
+                s += $"{a},";
+                //Console.WriteLine(s);
+                do
                 {
-                    array[row, column, volum] = a = new Random().Next(1, 10);
-                }
-                else
-                {
-                    volum--;
-                }
-                array[row, column, volum] = a;   
+                    a = new Random().Next(10, 100);
+                    // метод "Contains" имеет логический тип данных , принимает на вход массив(строку) и значение 
+                    // для проверки, возвращая истину при нахождении в строке данного символа
+                } while (s.Contains(Convert.ToString(a)));
+                array[row, column, volum] = a;
+                //если указать ровно 8 чисел, то значения элементов массива будут повторяться :(( 
+                //как правильно сделать "неповторяющиеся" символы? 
             }
         }
 
@@ -53,7 +54,7 @@ void Print(int[,,] array)
             for (int volum = 0; volum < volume; volum++)
             {
                 Console.WriteLine($"{array[row, column, volum]} ({row}, {column}, {volum})");
-            }   
+            }
         }
     }
 }
